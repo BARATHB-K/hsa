@@ -41,7 +41,7 @@ const Books = (props) => {
                 .then((data) => setBooks(data.work));
         };
         fetchHandler();
-    }, []);
+    });
 
     console.log(books);
 
