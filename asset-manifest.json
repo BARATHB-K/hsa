@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/hsa/static/css/main.c675f91d.css",
-    "main.js": "/hsa/static/js/main.0fc47e33.js",
+    "main.js": "/hsa/static/js/main.119b7191.js",
     "index.html": "/hsa/index.html",
     "main.c675f91d.css.map": "/hsa/static/css/main.c675f91d.css.map",
-    "main.0fc47e33.js.map": "/hsa/static/js/main.0fc47e33.js.map"
+    "main.119b7191.js.map": "/hsa/static/js/main.119b7191.js.map"
   },
   "entrypoints": [
     "static/css/main.c675f91d.css",
-    "static/js/main.0fc47e33.js"
+    "static/js/main.119b7191.js"
   ]
 }
