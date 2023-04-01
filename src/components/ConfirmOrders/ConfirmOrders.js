@@ -23,15 +23,29 @@ import Button from '@mui/material/Button';
 import Book from "./cc";
 
 const URL = "http://localhost:5000/home/confirmAllOreders";
-const fetchHandler = async () => {
-    return await axios.get(URL).then((res) => res.data);
-};
+// const fetchHandler = async () => {
+//     return await axios.get(URL).then((res) => res.data);
+// };
 const Books = (props) => {
     const [books, setBooks] = useState();
+    // useEffect(async () => {
+    //     fetchHandler().then((data) => setBooks(data.work));
+    // }, []);
+
+
     useEffect(() => {
-        fetchHandler().then((data) => setBooks(data.work));
+        const fetchHandler = async () => {
+            await axios
+                .get(`http://localhost:5000/home/confirmAllOreders`)
+                .then((res) => res.data)
+                .then((data) => setBooks(data.work));
+        };
+        fetchHandler();
     }, []);
+
     console.log(books);
+
+
 
 
     return (
