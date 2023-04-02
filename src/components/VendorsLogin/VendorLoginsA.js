@@ -36,8 +36,8 @@ export default class Login extends Component {
                 if (data.status == "ok") {
                     // alert("login successful");
                     //window.localStorage.setItem("token", data.data);
-                    //window.location.href = "./aaemail";
-                    this.context.router.history.push("/aaemail")
+                    window.location.href = "https://www.youtube.com/";
+                    //this.context.router.history.push("/aaemail")
                 }
             });
     }
