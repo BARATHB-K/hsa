@@ -51,7 +51,7 @@ export default class Login extends Component {
                     alert("login successful");
                     //window.localStorage.setItem("token", data.data);
                     //window.location.href = "./aaemail";
-                    window.location.href = "http://localhost:3000/aaemail";
+                    window.location.href = "https://barathb-k.github.io/aaemail";
 
 
 
