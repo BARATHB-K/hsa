@@ -2,9 +2,18 @@
 import React, { Component } from "react";
 
 
+import { useNavigate } from "react-router-dom";
+
+
+
+
+
 
 
 export default class Login extends Component {
+
+
+
     constructor(props) {
         super(props);
         this.state = {
@@ -14,8 +23,12 @@ export default class Login extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleSubmit(e) {
+
+
         e.preventDefault();
         const { email, password } = this.state;
+
+
         //console.log(fname, lname, email, password);
         fetch("http://localhost:5000/home/siginHc", {
             method: "POST",
@@ -32,15 +45,22 @@ export default class Login extends Component {
         })
             .then((res) => res.json())
             .then((data) => {
+
                 console.log(data, "userRegister");
                 if (data.status == "ok") {
                     alert("login successful");
                     //window.localStorage.setItem("token", data.data);
-                    window.location.href = "./aaemail";
+                    //window.location.href = "./aaemail";
+                    window.location.href = "http://localhost:3000/aaemail";
+
+
+
+
                 }
             });
     }
     render() {
+
         return (
             <div classname="auth-wrapper">
                 <div className="auth-inner">

@@ -18,7 +18,7 @@ const Header = () => {
                     >
                         {/* <Tab LinkComponent={NavLink} to="/" label="start" /> */}
                         <Tab LinkComponent={NavLink} to="/card" label="home" />
-                        <Tab LinkComponent={NavLink} to="/about" label="About" />
+                        <Tab LinkComponent={NavLink} to="/about" label="About " />
                         {/* <Tab LinkComponent={NavLink} to="/aaemail" label="Orders" /> */}
                         {/* <Tab LinkComponent={NavLink} to="/signup" label="Login" /> */}
                         <Tab LinkComponent={NavLink} to="/Log" label="Login" />
