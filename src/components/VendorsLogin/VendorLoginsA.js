@@ -34,7 +34,7 @@ export default class Login extends Component {
             .then((data) => {
                 console.log(data, "userRegister");
                 if (data.status == "ok") {
-                    // alert("login successful");
+                    alert("login successful");
                     //window.localStorage.setItem("token", data.data);
                     window.location.href = "https://www.youtube.com/";
                     //this.context.router.history.push("/aaemail")
