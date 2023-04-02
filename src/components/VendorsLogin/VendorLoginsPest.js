@@ -1,10 +1,15 @@
 
+import { renderHook } from "@testing-library/react";
 import React, { Component } from "react";
+import { useNavigate, Navigate, redirect, Link } from "react-router-dom";
+
 
 
 
 
 export default class Login extends Component {
+
+
     constructor(props) {
         super(props);
         this.state = {
@@ -14,6 +19,7 @@ export default class Login extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleSubmit(e) {
+
         e.preventDefault();
         const { email, password } = this.state;
         //console.log(fname, lname, email, password);
@@ -36,7 +42,9 @@ export default class Login extends Component {
                 if (data.status == "ok") {
                     alert("login successful");
                     //window.localStorage.setItem("token", data.data);
-                    window.location.href = "./about";
+                    window.location.href = "./aaemail";
+
+                    //<Link to="/about" />;
                 }
             });
     }
