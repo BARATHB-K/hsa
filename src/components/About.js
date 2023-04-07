@@ -12,7 +12,7 @@ const About = () => {
                     About us
                 </Typography>
                 <Typography sx={{ fontFamily: "fantasy" }} variant="h3">
-                    By MERN STACK
+                    By BBG
                 </Typography>
             </Box>
         </div>

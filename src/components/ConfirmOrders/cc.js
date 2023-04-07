@@ -35,7 +35,9 @@ const Book = (props) => {
                 body: "Booking Confirmed Thanks for Booking",
 
             })
-            .then((res) => res.data);
+            .then((res) => res.data)
+            .then(() => history("/"))
+            .then(() => history("/aaemail"));
         console.log(phoneno);
     };
 
